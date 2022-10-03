@@ -1,4 +1,4 @@
-package com.fzz.netty;
+package com.fzz.netty.normalIO;
 
 import java.io.FileInputStream;
 import java.io.RandomAccessFile;
@@ -28,11 +28,8 @@ public class Test1 {
             //FileInputStream file = new FileInputStream("data1.txt");
             FileChannel channel = file.getChannel();
             ByteBuffer buffer = ByteBuffer.allocate(20);
-            while(true){
-                int len = channel.read(buffer);
-                if(len==-1){
-                    break;
-                }
+            int len=-1;
+            while((len=channel.read(buffer))!=-1){
                 buffer.flip();
                 while(buffer.hasRemaining()){
                     System.out.print((char)buffer.get());
