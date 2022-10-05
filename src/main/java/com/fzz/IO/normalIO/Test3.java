@@ -1,7 +1,5 @@
-package com.fzz.netty.normalIO;
+package com.fzz.IO.normalIO;
 
-import java.nio.channels.Channel;
-import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

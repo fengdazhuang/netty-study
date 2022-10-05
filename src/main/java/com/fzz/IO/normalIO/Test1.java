@@ -1,6 +1,5 @@
-package com.fzz.netty.normalIO;
+package com.fzz.IO.normalIO;
 
-import java.io.FileInputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;

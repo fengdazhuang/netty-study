@@ -1,4 +1,4 @@
-package com.fzz.netty.normalIO;
+package com.fzz.IO.normalIO;
 
 import java.io.IOException;
 import java.nio.file.*;
